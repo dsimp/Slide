@@ -1,0 +1,33 @@
+{
+  "name": "slide",
+  "version": "1.0.0",
+  "description": "Event app to see whos going",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsimp/Slide.git"
+  },
+  "author": "Djvon Simpson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dsimp/Slide/issues"
+  },
+  "homepage": "https://github.com/dsimp/Slide#readme",
+  "dependencies": {
+    "D": "^1.0.0",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^6.2.1",
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.1",
+    "gravatar": "^1.8.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.5",
+    "nodemon": "^2.0.12",
+    "request": "^2.88.2"
+  }
+}
