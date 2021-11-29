@@ -4,8 +4,8 @@ const { check, validationResult } = require("express-validator/check");
 const auth = require("../../middleware/auth");
 
 const Post = require("../../models/Post");
-const Profile = requie("../../models/Profile");
-const User = requie("../../models/User");
+const Profile = require("../../models/Profile");
+const User = require("../../models/User");
 
 router.post(
   "/",
