@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
 import Landing from "./components/layout/Landing";
 import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
-import Alert from "./components/layout/Alert";
+import Alert from "./src/components/layout/Alert";
 import Dashboard from "./components/dashboard/Dashboard";
 import ProfileForm from "./components/profile-forms/ProfileForm";
 import AddExperience from "./components/profile-forms/AddExperience";
@@ -47,7 +47,7 @@ const App = () => {
       <Router>
         <Navbar />
         <Alert />
-        <Routes>
+        <Switch>
           <Route path="/" element={<Landing />} />
           <Route path="register" element={<Register />} />
           <Route path="login" element={<Login />} />
@@ -76,7 +76,7 @@ const App = () => {
           <Route path="posts" element={<PrivateRoute component={Posts} />} />
           <Route path="posts/:id" element={<PrivateRoute component={Post} />} />
           <Route path="/*" element={<NotFound />} />
-        </Routes>
+        </Switch>
       </Router>
     </Provider>
   );
